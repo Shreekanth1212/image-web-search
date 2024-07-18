@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+
+body {
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 30px;
+   
+    text-align: center;
+    margin: 40px 0 60px 0;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+#searchinput {
+    width: 120px;
+    max-width: 400px;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    font-size: 16px;
+    color: rgb(46, 42, 42);
+}
+
+#searchbtn {
+    padding: 10px 20px;
+    background-color: green;
+    border-radius: 6px;
+    margin-left: 13px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: cornsilk;
+   
+}
+
+.searchtotal {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 60%;
+    margin: 0 auto;
+}
+/* .imgsize{
+    height: 300px;
+    width: 300px;
+} */
+
+.searchresult {
+    margin-bottom: 60px;
+    width: 30%;
+    height: 100%;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.searchresult img {
+    width: 100%;
+    height: 200px;
+    object-fit:fill;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.searchresult:hover img {
+    opacity: 0.8;
+}
+
+.searchresult a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+#showmorebtn {
+    padding: 10px;
+    font-size: 16px;
+  
+    color: rgb(5, 14, 5);
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(53, 157, 226);
+    margin-top: 20px;
+    display: block;
+    margin: 30px auto;
+    cursor: pointer;
+    width: 110px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .searchtotal {
+        width: 60%;
+    }
+    .searchresult {
+        width: 45%;
+        margin-left: 5px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .searchtotal {
+        /* padding: 20px; */
+        width: 60%;
+    }
+    .searchresult {
+        width: 100%;
+    }
+}
